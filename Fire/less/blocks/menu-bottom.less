@@ -1,0 +1,145 @@
+.menu-bottom {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+    padding-left: 30px;
+  
+    list-style: none;
+
+    .leaf {
+      list-style: none;
+    }
+  
+    a {
+      font-size: 14px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: #000;
+    }
+  
+    a:hover,
+    a:focus {
+      opacity: 0.7;
+    }
+  
+    a:active {
+      opacity: 0.3;
+    }
+  
+    .active {
+      color: #e42229;
+        
+      border-bottom: 1px solid #e42229;
+    }
+  }
+
+  .mb__btn-burger {
+    display: none;
+  }
+}
+
+@media (max-width: 548px) {
+  .menu-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .menu {
+      display: none;
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: inline-block;
+        padding: 10px 0;
+
+        font-size: 18px;
+      }
+    }
+
+    .menu--visible {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mb__btn-burger {
+      position: relative;
+
+      float: right;
+      display: block;
+      width: 50px;
+      height: 10px;
+      margin: 20px 0;
+      padding: 0;
+
+      background-color: #e42229;
+
+      border: none;
+
+      transition-duration: 0.3s;
+
+      cursor: pointer;
+      outline: none;
+    }
+
+    .mb__btn-burger::before,
+    .mb__btn-burger::after {
+      content: '';
+
+      position: absolute;
+
+      width: 50px;
+      height: 10px;
+
+      background-color: #e42229;
+
+      transition-duration: 0.3s;
+    }
+
+    .mb__btn-burger::before {
+      top: -20px;
+      left: 0;
+    }
+
+    .mb__btn-burger::after {
+      bottom: -20px;
+      left: 0;
+    }
+
+    .mb__btn-burger--close {
+      background-color: transparent;
+
+      transition-duration: 0.3s;
+    }
+
+    .mb__btn-burger--close::before,
+    .mb__btn-burger--close::after {
+      content: '';
+
+      position: absolute;
+
+      width: 50px;
+      height: 10px;
+
+      background-color: #e42229;
+
+      transition-duration: 0.3s;
+    }
+
+    .mb__btn-burger--close::before {
+      top: 0;
+
+      transform: rotate(45deg)
+    }
+
+    .mb__btn-burger--close::after {
+      bottom: 0;
+
+      transform: rotate(-45deg)
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.block-header {
+  position: relative;
+
+  margin: 0;
+  padding-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.block-header::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 103px/2);
+
+  width: 103px;
+  height: 1px;
+
+  background-color: #e42229;
+}

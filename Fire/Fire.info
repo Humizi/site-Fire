@@ -1,0 +1,21 @@
+name = Fire
+description = 123.
+package = Core
+version = VERSION
+core = 7.x
+
+scripts[] = plugins/swiper/js/swiper.min.js
+scripts[] = plugins/mask/inputmask.min.js
+scripts[] = js/slider.min.js
+scripts[] = js/sidebar.min.js
+scripts[] = js/menu.min.js
+scripts[] = js/phoneMask.min.js
+
+stylesheets[all][] = plugins/swiper/css/swiper.min.css
+stylesheets[all][] = css/style.min.css
+
+regions[content] = Содержимое
+regions[map] = Карта
+regions[contacts] = Контакты
+regions[sidebar] = Боковое меню
+regions[no-wrap] = Содержимое без обёрток
